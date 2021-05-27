@@ -48,6 +48,7 @@ Partial Class PRINCIPAL
         Me.ELIMINARToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.REIMPRIMIREXPEDIENTEToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AGREGARFERENCIAToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SOLICITUDEXPEDIENTEToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EMERGENCIAToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.IMPRONTOToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.NUEVOToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
@@ -121,6 +122,7 @@ Partial Class PRINCIPAL
         Me.ToolStripStatusLabel1 = New System.Windows.Forms.ToolStripStatusLabel()
         Me.ToolTip = New System.Windows.Forms.ToolTip(Me.components)
         Me.TXTIDENTIDAD = New System.Windows.Forms.TextBox()
+        Me.BUSCAREXPEDIENTEToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip.SuspendLayout()
         Me.StatusStrip.SuspendLayout()
         Me.SuspendLayout()
@@ -178,7 +180,7 @@ Partial Class PRINCIPAL
         Me.NUEVOToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MEDICOToolStripMenuItem1, Me.ESPECIALIDADToolStripMenuItem})
         Me.NUEVOToolStripMenuItem.Image = CType(resources.GetObject("NUEVOToolStripMenuItem.Image"), System.Drawing.Image)
         Me.NUEVOToolStripMenuItem.Name = "NUEVOToolStripMenuItem"
-        Me.NUEVOToolStripMenuItem.Size = New System.Drawing.Size(161, 22)
+        Me.NUEVOToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.NUEVOToolStripMenuItem.Text = "NUEVO / EDITAR"
         '
         'MEDICOToolStripMenuItem1
@@ -197,18 +199,18 @@ Partial Class PRINCIPAL
         '
         Me.BUSCARToolStripMenuItem.Image = CType(resources.GetObject("BUSCARToolStripMenuItem.Image"), System.Drawing.Image)
         Me.BUSCARToolStripMenuItem.Name = "BUSCARToolStripMenuItem"
-        Me.BUSCARToolStripMenuItem.Size = New System.Drawing.Size(161, 22)
+        Me.BUSCARToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.BUSCARToolStripMenuItem.Text = "BUSCAR"
         '
         'VACACIONESToolStripMenuItem
         '
         Me.VACACIONESToolStripMenuItem.Name = "VACACIONESToolStripMenuItem"
-        Me.VACACIONESToolStripMenuItem.Size = New System.Drawing.Size(161, 22)
+        Me.VACACIONESToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.VACACIONESToolStripMenuItem.Text = "VACACIONES"
         '
         'CONSULTAEXTERNAToolStripMenuItem
         '
-        Me.CONSULTAEXTERNAToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.HOSPITALIZACIONToolStripMenuItem, Me.DICTAMENToolStripMenuItem, Me.CERTIFICACIONDENACIMIENTOToolStripMenuItem, Me.CERTIFICACIONDEDEFUNCIONToolStripMenuItem, Me.CITASToolStripMenuItem, Me.AGREGARFERENCIAToolStripMenuItem})
+        Me.CONSULTAEXTERNAToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.HOSPITALIZACIONToolStripMenuItem, Me.DICTAMENToolStripMenuItem, Me.CERTIFICACIONDENACIMIENTOToolStripMenuItem, Me.CERTIFICACIONDEDEFUNCIONToolStripMenuItem, Me.CITASToolStripMenuItem, Me.AGREGARFERENCIAToolStripMenuItem, Me.SOLICITUDEXPEDIENTEToolStripMenuItem, Me.BUSCAREXPEDIENTEToolStripMenuItem1})
         Me.CONSULTAEXTERNAToolStripMenuItem.Image = CType(resources.GetObject("CONSULTAEXTERNAToolStripMenuItem.Image"), System.Drawing.Image)
         Me.CONSULTAEXTERNAToolStripMenuItem.Name = "CONSULTAEXTERNAToolStripMenuItem"
         Me.CONSULTAEXTERNAToolStripMenuItem.Size = New System.Drawing.Size(145, 43)
@@ -281,6 +283,12 @@ Partial Class PRINCIPAL
         Me.AGREGARFERENCIAToolStripMenuItem.Name = "AGREGARFERENCIAToolStripMenuItem"
         Me.AGREGARFERENCIAToolStripMenuItem.Size = New System.Drawing.Size(248, 22)
         Me.AGREGARFERENCIAToolStripMenuItem.Text = "AGREGAR REFERENCIA"
+        '
+        'SOLICITUDEXPEDIENTEToolStripMenuItem
+        '
+        Me.SOLICITUDEXPEDIENTEToolStripMenuItem.Name = "SOLICITUDEXPEDIENTEToolStripMenuItem"
+        Me.SOLICITUDEXPEDIENTEToolStripMenuItem.Size = New System.Drawing.Size(248, 22)
+        Me.SOLICITUDEXPEDIENTEToolStripMenuItem.Text = "SOLICITUD EXPEDIENTE"
         '
         'EMERGENCIAToolStripMenuItem
         '
@@ -760,6 +768,12 @@ Partial Class PRINCIPAL
         Me.TXTIDENTIDAD.TabIndex = 9
         Me.TXTIDENTIDAD.Visible = False
         '
+        'BUSCAREXPEDIENTEToolStripMenuItem1
+        '
+        Me.BUSCAREXPEDIENTEToolStripMenuItem1.Name = "BUSCAREXPEDIENTEToolStripMenuItem1"
+        Me.BUSCAREXPEDIENTEToolStripMenuItem1.Size = New System.Drawing.Size(248, 22)
+        Me.BUSCAREXPEDIENTEToolStripMenuItem1.Text = "BUSCAR EXPEDIENTE"
+        '
         'PRINCIPAL
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -886,5 +900,6 @@ Partial Class PRINCIPAL
     Friend WithEvents NUEVOToolStripMenuItem5 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents BUSCARToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents VACACIONESToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-
+    Friend WithEvents SOLICITUDEXPEDIENTEToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents BUSCAREXPEDIENTEToolStripMenuItem1 As ToolStripMenuItem
 End Class
